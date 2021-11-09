@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const base_server_path = process.env.NEXT_PUBLIC_URL_API;
-axios.defaults.headers["Authorization"] = localStorage.getItem("token_id")
-  ? `Bearer ${localStorage.getItem("token_id")}`
-  : "";
+// axios.defaults.headers["Authorization"] = localStorage.getItem("token_id")
+//   ? `Bearer ${localStorage.getItem("token_id")}`
+//   : "";
 
 const getService = async (path, body) => {
-  const response = await axios.get(`${base_server_path}${path}`, body);
+  const response = await axios.get(`${base_server_path}${path}`, {params:body});
   return response;
 };
 
