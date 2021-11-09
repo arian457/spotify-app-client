@@ -1,0 +1,10 @@
+.drawer{
+    display: flex;
+    flex-direction: column;
+}
+.drawerItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
