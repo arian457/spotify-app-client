@@ -10,12 +10,12 @@
     flex-direction: column;
     margin-bottom: 1rem;
     background-color: #1DB954;
-    border: 5px solid #fafafa;
+   
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
     background-color:#3f3636;
     align-items: center;
-    
+    animation: slide-in 1s ease;
 
   }
 .tableParent{
@@ -26,7 +26,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
   justify-content: space-between;
   align-items: center;
-
+  backdrop-filter: blur(2px);
  border-radius: 1.1rem;
 
 
@@ -44,7 +44,21 @@
     align-items: flex-start;
     position: relative;
    
-   
+}
+.surveyContainerSurveyListAnimate {
+  animation: slide-in 0.4s ease;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: tranisition(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: tranisition(0);
+  }
+
 }
 .tableChild img{
   vertical-align: middle;
@@ -59,9 +73,9 @@
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
   width: 100%;
-  border-radius: 1.1rem;
   justify-content:space-between;
-  padding:0 2rem
+  padding:0 2rem;
+  border-radius: 0.5rem;
 }
 .artistName {
   font-weight: bold;

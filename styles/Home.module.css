@@ -11,7 +11,7 @@
   margin: 1rem 0;
   width: max-content;
   border-radius: 2rem;
-  background-color: #1DB954;
+  background-color: 	#191414;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -44,7 +44,7 @@
   font-weight: 400;
   font-size: 4rem;
   color:#1DB954;
-  background-color: #FFFFFF;
+  background-color: 	#191414;
   display: flex;
   border: 5px solid #1DB954;
   border-radius: 2rem;
@@ -54,25 +54,7 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.title,
-.description {
-  text-align: center;
-}
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
 .grid {
   display: flex;
