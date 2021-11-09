@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import styles from "./table.module.css";
 import { Child } from "./Child";
+
 export const Parent = ({ props }) => {
   const [buttonBar, setButtonBar] = useState(false);
+  const [albums, setAlbums] = useState([]);
+  const handleClick = e => {
+
+  }
   return (
-    <div>
+    <div >
       <div
         style={{
-          background: `url(${props.images[0].url})`,
+          background: `url(${props?.images[0]?.url})`,
           backgroundPosition: "center",
           backgroundSize: !buttonBar ? "cover" : "contain",
           backdropFilter: "blur(8px)",
@@ -20,17 +25,17 @@ export const Parent = ({ props }) => {
             style={{ alignSelf: "left" }}
             target="_blank"
           >
-            <img src={props.images[0].url} className={styles.avatar} />
+            <img src={props?.images[0]?.url} className={styles.avatar} />
           </a>
           <h1 className={styles.artistName}> {props.name}</h1>
           <ul
-            className={buttonBar && styles.open}
+            className={styles.arrow}
             onClick={() => setButtonBar(!buttonBar)}
           >
             {"▼"}
           </ul>
         </div>
-        {buttonBar && <Child />}
+        {buttonBar && <Child albums={albums} setAlbums={setAlbums} id={props.id} />}
       </div>
     </div>
   );
