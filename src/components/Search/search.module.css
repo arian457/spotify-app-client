@@ -1,0 +1,28 @@
+.searchContainer {
+ margin-top: 1rem;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  max-width: 100vw;
+  line-height: 1.15;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 1rem;
+}
+.searchContainer input {
+  border-radius: 1.2rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 2rem;
+  background-color:#19141400 ;
+  border-style: hidden;
+  color: #FAFAFA;
+ 
+}
+.searchContainer h1 {
+ margin:0 0 1rem
+  }
+  
