@@ -1,0 +1,162 @@
+.avatar {
+  vertical-align: middle;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.tableContainer {
+  width: -webkit-fill-available;
+  height: max-content;
+  overflow-y: scroll;
+  max-height: 500px;
+  margin: 2rem;
+}
+.tableContainer p {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  color: #FAFAFA;
+  font-weight: 100;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.tableContainer::-webkit-scrollbar {
+  width: 20px;
+}
+.tableContainer::-webkit-scrollbar-thumb {
+  background-color: #1db954;
+  border: 2px solid #191414e1;
+}
+.tableContainer::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 14px;
+}
+
+.tableContainer::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 14px;
+}
+.tableItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background-color: #1db954;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  border-radius: 0.5rem;
+  background-color: #3f3636;
+  align-items: center;
+  animation: slide-in 1s ease;
+}
+
+.tableParent {
+  display: flex;
+  width: 100%;
+  height: 12rem;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter:url() blur(4px) saturate(250%);
+
+  border-radius: 1.1rem;
+}
+.tableParent ul {
+  cursor: pointer;
+}
+
+.tableChild {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: 1rem;
+  border-radius: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+}
+.surveyContainerSurveyListAnimate {
+  animation: slide-in 0.4s ease;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: tranisition(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: tranisition(0);
+  }
+}
+.tableChild img {
+  vertical-align: middle;
+  width: 90px;
+  height: 90px;
+}
+.divContent {
+  box-shadow: 1px 182px 43px -60px rgba(0, 0, 0, 0.84) inset;
+  -webkit-box-shadow: 1px 182px 43px -60px rgba(0, 0, 0, 0.84) inset;
+  -moz-box-shadow: 1px 182px 43px -60px rgba(0, 0, 0, 0.84) inset;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+.tableChildRow {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.artistName {
+  font-weight: bold;
+  justify-self: center;
+  color: #fafafa;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+.albumName {
+  font-weight: bold;
+  justify-self: center;
+  color: #fafafafb;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+.albumName label:hover {
+  color: #fafafa;
+}
+.arrow {
+  background-color: white;
+  width: max-content;
+  padding: 0.3rem;
+  margin: 1rem 2rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .tableParent {
+    width: 100%;
+    flex-direction: column;
+    max-width: 100vw;
+    height: max-content;
+  }
+  .tableContainer {
+    margin:0.5rem;
+    overflow-y: visible;
+    max-height: max-content;
+  }
+  .tableContainer::-webkit-scrollbar {
+    width: 5px;
+  }
+  .tableChild{
+    overflow-y: scroll;
+    max-height: 500px;
+  }
+  .artistName{
+    margin: 0.2rem;
+  }
+}
+
