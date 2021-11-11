@@ -1,0 +1,165 @@
+.formContainer {
+  position: absolute;
+  left: 2rem;
+  border: 5px solid #ff8400da;
+  top: 2rem;
+  padding: 1rem;
+  color: #ff8400;
+  border-radius: 2rem;
+  background-color: #191414e1;
+  animation: slide-in 1s ease;
+}
+.formContainer h1 {
+  font-size: 1.4rem;
+  margin: 0.5rem;
+}
+.formContainer li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.formContainer li:hover {
+  text-decoration: underline;
+}
+.formContainer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.formContainer label {
+  font-size: 1.4rem;
+}
+.modalBackground {
+  position: fixed;
+  background: black;
+  opacity: 0.2;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.cardContainer {
+  padding: 24px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 40rem;
+  height: max-content;
+  background-color: #191414e1;
+  border: 5px solid #ff8400da;
+  border-radius: 24px;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  margin: auto;
+}
+.modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal h1 {
+  text-align: center;
+  text-decoration: underline;
+  border-radius: 1rem;
+  color: #fafafa;
+  animation: slide-in 1s ease;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: tranisition(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: tranisition(0);
+  }
+}
+.modal h3 {
+  text-align: center;
+  color: #fafafa;
+  background-color: #ff8400da;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.modal button {
+  width: 7rem;
+  height: 3rem;
+  align-self: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: 2px solid #ff8400da;
+  border-radius: 2rem;
+  background-color: #191414e1;
+  color: #fafafa;
+  cursor: pointer;
+}
+.modal button:hover {
+  background-color: #ff8400da;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputGroup input {
+  height: 3rem;
+  width: 20rem;
+  font-size: 1.5rem;
+}
+.error {
+  background-color: rgba(220, 20, 60, 0.938);
+  color:rgb(149, 16, 16);
+  text-decoration: none;
+  padding: 1rem 0;
+  font-weight: 100;
+}
+
+
+@media (max-width: 600px) {
+  .formContainer {
+    position: relative; 
+    left: 0;
+    top:0;
+    margin-bottom:1rem;
+    width: 90vw;
+  }
+  .modal {
+    max-height: 80vh;
+  }
+  .modal h1 {
+    font-size: 1.5rem;
+  }
+  .modal h3 {
+    font-size: 1.3rem;
+  }
+  .formContainer h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .cardContainer {
+    width: 100vw;
+    max-height: 80vh;
+  }
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .inputGroup input {
+    height: 2rem;
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+  .modal button {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+}
