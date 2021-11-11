@@ -1,0 +1,62 @@
+.drawer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  max-width: 55vw;
+  width: max-content;
+  padding: 1rem;
+  font-weight: 400;
+  color: #1db954;
+  overflow-y: scroll;
+  height: max-content;
+  max-height: 500px;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: max-height 0.2s ease-out;
+}
+.drawer button {
+  background: none;
+  border: none;
+  color: #FAFAFA;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+.drawer::-webkit-scrollbar {
+  width: 10px;
+}
+.drawer::-webkit-scrollbar-thumb {
+  background-color: #191414e1;
+  border: 2px solid #1db954;
+}
+.drawer::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 14px;
+}
+
+.drawer::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 14px;
+}
+.drawerItem {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.drawerItem b {
+  margin: 0.2rem;
+}
+
+
+@media (max-width: 600px) {
+  .drawer{
+    width: 100vw;
+    padding: 0;
+    max-width: 100vw;
+  }
+  .drawerItem b {
+    margin: 0.8rem;
+  }
+}
